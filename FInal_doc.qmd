@@ -20,6 +20,8 @@ olympics<- read.csv(here::here("data", "olympics.csv"))
 ## Objective 1
 
 -   Create a `{gtsummary}` table of descriptive statistics about your data (1 pt)
+-   the table below shows the descriptive statistics between men `r (nrow(olympics2[olympics2$sex == "M"` and women `r (nrow(olympics2[olympics2$sex == "F" (some athletes are included multiple times)`
+-   the number of unique athletes in the data set is `r length(unique(olympics2$id`
 
 ```{r}
 #| label: tbl-one
@@ -41,6 +43,8 @@ tbl_summary(
 ## Objective 2
 
 Fit a regression and present well-formatted results from the regression (1 pt)
+
+@tbl-two, a table of the logictic regression, is shown below
 
 ```{r}
 #| label: tbl-two
@@ -67,20 +71,97 @@ tbl_regression(
 
 Create a figure (1 pt)
 
+the figure below (@fig ) shows a forest plot based on the logistic regression.
+
 ```{r}
+#| label: fig
+#| fig-cap: "forest plot of logistic regression"
 library(broom)
 library(ggplot2)
 tidy(log_model, conf.int = TRUE, exponentiate = TRUE) |> 
   tidycat::tidy_categorical(log_model, exponentiate = TRUE) |> 
-  slice(-1) |> # remove intercept
+  slice(-1) |> 
  ggplot(mapping = aes(x = level, y = estimate, 
                        ymin = conf.low, ymax = conf.high)) +
   geom_point() +
   geom_errorbar() +
+	ggtitle("Forest Plot") +
   facet_grid(cols = vars(variable), scales = "free", space = "free") +
   scale_y_log10()
 ```
 
+## Objective 4
+
+Write *and* use a function that does something with the data (1 pt)
+
 ```{r}
 
+new_std <- function(x) {
+  n <- length(x)
+  mean_val <- sum(x, na.rm = TRUE) / n
+  variance <- sum((x - mean_val)^2, na.rm = TRUE) / (n - 1)
+  std2 <- sqrt(variance)
+  return(std2)  
+}
+
+x<- olympics2$medal_num
+new_std(x)
+
+
 ```
+
+## Objective 5
+
+Create and render a quarto document that includes at least:
+
+-   The table, regression results, and figure, with appropriate captions (1 pt)
+
+-   Inline R code in at least 2 places, 1 pulling a statistic from a table (i.e., using `gtsummary::inline_text()`) and 1 printing something else (like we did with the mean age in the example) (1 pt)
+
+-   Cross-references to a table and a figure at least once each (1 pt)
+
+-   A brief description of the data, including its source (1 pt)
+
+```{r}
+table1<-tbl_summary(
+	olympics, 
+		by = sex, 
+		include = c(height, weight,  medal, age), 
+		label = list(
+			height ~ "Height", 
+			weight ~ "Weight",
+			medal ~ "Medal"
+		)
+)
+inline_text(table1, variable = "age", column = "stat_1")
+```
+
+The median age and IQR of athletes was `r inline_text(table1, variable = "age", column = "stat_1")`
+
+the mean age for just men was `r mean(olympics2$age[olympics2$sex == "M"], na.rm = TRUE)`
+
+the mean age for just women was `r mean(olympics2$age[olympics2$sex == "F"], na.rm = TRUE)`
+
+## Objective 6
+
+Use the `{here}` package every time you refer to file paths when reading in data and saving any files (1 pt)
+
+```{r}
+forest_olympics<- tidy(log_model, conf.int = TRUE, exponentiate = TRUE) |> 
+  tidycat::tidy_categorical(log_model, exponentiate = TRUE) |> 
+  slice(-1) |> 
+ ggplot(mapping = aes(x = level, y = estimate, 
+                       ymin = conf.low, ymax = conf.high)) +
+  geom_point() +
+  geom_errorbar() +
+	ggtitle("Forest Plot") +
+  facet_grid(cols = vars(variable), scales = "free", space = "free") +
+  scale_y_log10()
+print(fore)
+ggsave(plot=forest_olympics , 
+       filename =  here("data", "forest.olympics.pdf"))
+```
+
+## Data description
+
+This data covers 120 years of olympic athlete data and results. It comes from a Kaggle dataset published by RGRIFFIN. It can be found at <https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results/>
