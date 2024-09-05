@@ -4,23 +4,83 @@ author: "Ravi Harley"
 format: html
 ---
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+## Adding Packages
 
 ```{r}
-1 + 1
+
+library(here)
+library(dplyr)
+library(janitor)
+library(readr)
+library(gtsummary)
+olympics<- read.csv(here::here("data", "olympics.csv"))
+olympics<- read.csv(here::here("data", "olympics.csv"))
 ```
 
-You can add options to executable code like this 
+## Objective 1
+
+-   Create a `{gtsummary}` table of descriptive statistics about your data (1 pt)
 
 ```{r}
-#| echo: false
-2 * 2
+#| label: tbl-one
+#| tbl-cap: "this table shows descriptive stats for height, weight, and medals stratified on sex"
+#| tbl-cap-location: bottom
+tbl_summary(
+	olympics, 
+		by = sex, 
+		include = c(height, weight,  medal), 
+		label = list(
+			height ~ "Height", 
+			weight ~ "Weight",
+			medal ~ "Medal"
+		)
+)
+
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+## Objective 2
+
+Fit a regression and present well-formatted results from the regression (1 pt)
+
+```{r}
+#| label: tbl-two
+#| tbl-cap: "this table shows logistic regression of medals against predictors sex, height, and weight"
+olympics$sex_num<-ifelse(olympics$sex=="M", 1, 0)
+olympics$medal_num<-ifelse(olympics$medal=="Gold", 1, ifelse(olympics$medal=="Silver", 2, ifelse(olympics$medal== "Bronze", 3, 0)))	
+
+olympics <- olympics %>% filter(!is.na(medal_num))
+	
+log_model<-glm(medal_num ~ height + weight + sex_num, 
+							 data = olympics)
+
+tbl_regression(
+  log_model, 
+  exponentiate = TRUE,
+  label = list(
+    sex_num ~ "Sex",
+    weight ~ "Weight",
+    height ~ "Height"
+  ))
+```
+
+## Objective 3
+
+Create a figure (1 pt)
+
+```{r}
+library(broom)
+library(ggplot2)
+tidy(log_model, conf.int = TRUE, exponentiate = TRUE) |> 
+  tidycat::tidy_categorical(log_model, exponentiate = TRUE) |> 
+  slice(-1) |> # remove intercept
+ ggplot(mapping = aes(x = level, y = estimate, 
+                       ymin = conf.low, ymax = conf.high)) +
+  geom_point() +
+  geom_errorbar() +
+  facet_grid(cols = vars(variable), scales = "free", space = "free") +
+  scale_y_log10()
+```
+
+```{r}
+
+```
