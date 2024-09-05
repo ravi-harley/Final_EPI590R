@@ -145,6 +145,8 @@ Attaching package: 'janitor'</code></pre>
 <h2 class="anchored" data-anchor-id="objective-1">Objective 1</h2>
 <ul>
 <li>Create a <code>{gtsummary}</code> table of descriptive statistics about your data (1 pt)</li>
+<li>the table below shows the descriptive statistics between men 196594 and women 74522 (some athletes are included multiple times)</li>
+<li>the number of unique athletes in the data set is 135571</li>
 </ul>
 <div class="cell" data-tbl-cap-location="bottom">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">tbl_summary</span>(</span>
@@ -161,23 +163,23 @@ Attaching package: 'janitor'</code></pre>
 <figure class="quarto-float quarto-float-tbl figure">
 <div aria-describedby="tbl-one-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="btbervshau" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#btbervshau table {
+<div id="jhrfxbbgmn" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#jhrfxbbgmn table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#btbervshau thead, #btbervshau tbody, #btbervshau tfoot, #btbervshau tr, #btbervshau td, #btbervshau th {
+#jhrfxbbgmn thead, #jhrfxbbgmn tbody, #jhrfxbbgmn tfoot, #jhrfxbbgmn tr, #jhrfxbbgmn td, #jhrfxbbgmn th {
   border-style: none;
 }
 
-#btbervshau p {
+#jhrfxbbgmn p {
   margin: 0;
   padding: 0;
 }
 
-#btbervshau .gt_table {
+#jhrfxbbgmn .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -203,12 +205,12 @@ Attaching package: 'janitor'</code></pre>
   border-left-color: #D3D3D3;
 }
 
-#btbervshau .gt_caption {
+#jhrfxbbgmn .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#btbervshau .gt_title {
+#jhrfxbbgmn .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -220,7 +222,7 @@ Attaching package: 'janitor'</code></pre>
   border-bottom-width: 0;
 }
 
-#btbervshau .gt_subtitle {
+#jhrfxbbgmn .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -232,7 +234,7 @@ Attaching package: 'janitor'</code></pre>
   border-top-width: 0;
 }
 
-#btbervshau .gt_heading {
+#jhrfxbbgmn .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -244,13 +246,13 @@ Attaching package: 'janitor'</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#btbervshau .gt_bottom_border {
+#jhrfxbbgmn .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#btbervshau .gt_col_headings {
+#jhrfxbbgmn .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -265,7 +267,7 @@ Attaching package: 'janitor'</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#btbervshau .gt_col_heading {
+#jhrfxbbgmn .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -285,7 +287,7 @@ Attaching package: 'janitor'</code></pre>
   overflow-x: hidden;
 }
 
-#btbervshau .gt_column_spanner_outer {
+#jhrfxbbgmn .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -297,15 +299,15 @@ Attaching package: 'janitor'</code></pre>
   padding-right: 4px;
 }
 
-#btbervshau .gt_column_spanner_outer:first-child {
+#jhrfxbbgmn .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#btbervshau .gt_column_spanner_outer:last-child {
+#jhrfxbbgmn .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#btbervshau .gt_column_spanner {
+#jhrfxbbgmn .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -317,11 +319,11 @@ Attaching package: 'janitor'</code></pre>
   width: 100%;
 }
 
-#btbervshau .gt_spanner_row {
+#jhrfxbbgmn .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#btbervshau .gt_group_heading {
+#jhrfxbbgmn .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -347,7 +349,7 @@ Attaching package: 'janitor'</code></pre>
   text-align: left;
 }
 
-#btbervshau .gt_empty_group_heading {
+#jhrfxbbgmn .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -362,15 +364,15 @@ Attaching package: 'janitor'</code></pre>
   vertical-align: middle;
 }
 
-#btbervshau .gt_from_md > :first-child {
+#jhrfxbbgmn .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#btbervshau .gt_from_md > :last-child {
+#jhrfxbbgmn .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#btbervshau .gt_row {
+#jhrfxbbgmn .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -389,7 +391,7 @@ Attaching package: 'janitor'</code></pre>
   overflow-x: hidden;
 }
 
-#btbervshau .gt_stub {
+#jhrfxbbgmn .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -402,7 +404,7 @@ Attaching package: 'janitor'</code></pre>
   padding-right: 5px;
 }
 
-#btbervshau .gt_stub_row_group {
+#jhrfxbbgmn .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -416,15 +418,15 @@ Attaching package: 'janitor'</code></pre>
   vertical-align: top;
 }
 
-#btbervshau .gt_row_group_first td {
+#jhrfxbbgmn .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#btbervshau .gt_row_group_first th {
+#jhrfxbbgmn .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#btbervshau .gt_summary_row {
+#jhrfxbbgmn .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -434,16 +436,16 @@ Attaching package: 'janitor'</code></pre>
   padding-right: 5px;
 }
 
-#btbervshau .gt_first_summary_row {
+#jhrfxbbgmn .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#btbervshau .gt_first_summary_row.thick {
+#jhrfxbbgmn .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#btbervshau .gt_last_summary_row {
+#jhrfxbbgmn .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -453,7 +455,7 @@ Attaching package: 'janitor'</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#btbervshau .gt_grand_summary_row {
+#jhrfxbbgmn .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -463,7 +465,7 @@ Attaching package: 'janitor'</code></pre>
   padding-right: 5px;
 }
 
-#btbervshau .gt_first_grand_summary_row {
+#jhrfxbbgmn .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -473,7 +475,7 @@ Attaching package: 'janitor'</code></pre>
   border-top-color: #D3D3D3;
 }
 
-#btbervshau .gt_last_grand_summary_row_top {
+#jhrfxbbgmn .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -483,11 +485,11 @@ Attaching package: 'janitor'</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#btbervshau .gt_striped {
+#jhrfxbbgmn .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#btbervshau .gt_table_body {
+#jhrfxbbgmn .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -496,7 +498,7 @@ Attaching package: 'janitor'</code></pre>
   border-bottom-color: #D3D3D3;
 }
 
-#btbervshau .gt_footnotes {
+#jhrfxbbgmn .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -510,7 +512,7 @@ Attaching package: 'janitor'</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#btbervshau .gt_footnote {
+#jhrfxbbgmn .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -519,7 +521,7 @@ Attaching package: 'janitor'</code></pre>
   padding-right: 5px;
 }
 
-#btbervshau .gt_sourcenotes {
+#jhrfxbbgmn .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -533,7 +535,7 @@ Attaching package: 'janitor'</code></pre>
   border-right-color: #D3D3D3;
 }
 
-#btbervshau .gt_sourcenote {
+#jhrfxbbgmn .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -541,72 +543,72 @@ Attaching package: 'janitor'</code></pre>
   padding-right: 5px;
 }
 
-#btbervshau .gt_left {
+#jhrfxbbgmn .gt_left {
   text-align: left;
 }
 
-#btbervshau .gt_center {
+#jhrfxbbgmn .gt_center {
   text-align: center;
 }
 
-#btbervshau .gt_right {
+#jhrfxbbgmn .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#btbervshau .gt_font_normal {
+#jhrfxbbgmn .gt_font_normal {
   font-weight: normal;
 }
 
-#btbervshau .gt_font_bold {
+#jhrfxbbgmn .gt_font_bold {
   font-weight: bold;
 }
 
-#btbervshau .gt_font_italic {
+#jhrfxbbgmn .gt_font_italic {
   font-style: italic;
 }
 
-#btbervshau .gt_super {
+#jhrfxbbgmn .gt_super {
   font-size: 65%;
 }
 
-#btbervshau .gt_footnote_marks {
+#jhrfxbbgmn .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#btbervshau .gt_asterisk {
+#jhrfxbbgmn .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#btbervshau .gt_indent_1 {
+#jhrfxbbgmn .gt_indent_1 {
   text-indent: 5px;
 }
 
-#btbervshau .gt_indent_2 {
+#jhrfxbbgmn .gt_indent_2 {
   text-indent: 10px;
 }
 
-#btbervshau .gt_indent_3 {
+#jhrfxbbgmn .gt_indent_3 {
   text-indent: 15px;
 }
 
-#btbervshau .gt_indent_4 {
+#jhrfxbbgmn .gt_indent_4 {
   text-indent: 20px;
 }
 
-#btbervshau .gt_indent_5 {
+#jhrfxbbgmn .gt_indent_5 {
   text-indent: 25px;
 }
 
-#btbervshau .katex-display {
+#jhrfxbbgmn .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#btbervshau div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#jhrfxbbgmn div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -703,6 +705,7 @@ Table&nbsp;1: this table shows descriptive stats for height, weight, and medals 
 <section id="objective-2" class="level2">
 <h2 class="anchored" data-anchor-id="objective-2">Objective 2</h2>
 <p>Fit a regression and present well-formatted results from the regression (1 pt)</p>
+<p><a href="#tbl-two" class="quarto-xref">Table&nbsp;2</a>, a table of the logictic regression, is shown below</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>olympics<span class="sc">$</span>sex_num<span class="ot">&lt;-</span><span class="fu">ifelse</span>(olympics<span class="sc">$</span>sex<span class="sc">==</span><span class="st">"M"</span>, <span class="dv">1</span>, <span class="dv">0</span>)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>olympics<span class="sc">$</span>medal_num<span class="ot">&lt;-</span><span class="fu">ifelse</span>(olympics<span class="sc">$</span>medal<span class="sc">==</span><span class="st">"Gold"</span>, <span class="dv">1</span>, <span class="fu">ifelse</span>(olympics<span class="sc">$</span>medal<span class="sc">==</span><span class="st">"Silver"</span>, <span class="dv">2</span>, <span class="fu">ifelse</span>(olympics<span class="sc">$</span>medal<span class="sc">==</span> <span class="st">"Bronze"</span>, <span class="dv">3</span>, <span class="dv">0</span>))) </span>
@@ -727,23 +730,23 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
 </figcaption>
 <div aria-describedby="tbl-two-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<div id="ceqlvxdbyu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#ceqlvxdbyu table {
+<div id="cwivnrxvof" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#cwivnrxvof table {
   font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#ceqlvxdbyu thead, #ceqlvxdbyu tbody, #ceqlvxdbyu tfoot, #ceqlvxdbyu tr, #ceqlvxdbyu td, #ceqlvxdbyu th {
+#cwivnrxvof thead, #cwivnrxvof tbody, #cwivnrxvof tfoot, #cwivnrxvof tr, #cwivnrxvof td, #cwivnrxvof th {
   border-style: none;
 }
 
-#ceqlvxdbyu p {
+#cwivnrxvof p {
   margin: 0;
   padding: 0;
 }
 
-#ceqlvxdbyu .gt_table {
+#cwivnrxvof .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -769,12 +772,12 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   border-left-color: #D3D3D3;
 }
 
-#ceqlvxdbyu .gt_caption {
+#cwivnrxvof .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#ceqlvxdbyu .gt_title {
+#cwivnrxvof .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -786,7 +789,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   border-bottom-width: 0;
 }
 
-#ceqlvxdbyu .gt_subtitle {
+#cwivnrxvof .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -798,7 +801,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   border-top-width: 0;
 }
 
-#ceqlvxdbyu .gt_heading {
+#cwivnrxvof .gt_heading {
   background-color: #FFFFFF;
   text-align: center;
   border-bottom-color: #FFFFFF;
@@ -810,13 +813,13 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   border-right-color: #D3D3D3;
 }
 
-#ceqlvxdbyu .gt_bottom_border {
+#cwivnrxvof .gt_bottom_border {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#ceqlvxdbyu .gt_col_headings {
+#cwivnrxvof .gt_col_headings {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -831,7 +834,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   border-right-color: #D3D3D3;
 }
 
-#ceqlvxdbyu .gt_col_heading {
+#cwivnrxvof .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -851,7 +854,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   overflow-x: hidden;
 }
 
-#ceqlvxdbyu .gt_column_spanner_outer {
+#cwivnrxvof .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -863,15 +866,15 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   padding-right: 4px;
 }
 
-#ceqlvxdbyu .gt_column_spanner_outer:first-child {
+#cwivnrxvof .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#ceqlvxdbyu .gt_column_spanner_outer:last-child {
+#cwivnrxvof .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#ceqlvxdbyu .gt_column_spanner {
+#cwivnrxvof .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -883,11 +886,11 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   width: 100%;
 }
 
-#ceqlvxdbyu .gt_spanner_row {
+#cwivnrxvof .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#ceqlvxdbyu .gt_group_heading {
+#cwivnrxvof .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -913,7 +916,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   text-align: left;
 }
 
-#ceqlvxdbyu .gt_empty_group_heading {
+#cwivnrxvof .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -928,15 +931,15 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   vertical-align: middle;
 }
 
-#ceqlvxdbyu .gt_from_md > :first-child {
+#cwivnrxvof .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ceqlvxdbyu .gt_from_md > :last-child {
+#cwivnrxvof .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ceqlvxdbyu .gt_row {
+#cwivnrxvof .gt_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -955,7 +958,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   overflow-x: hidden;
 }
 
-#ceqlvxdbyu .gt_stub {
+#cwivnrxvof .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -968,7 +971,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   padding-right: 5px;
 }
 
-#ceqlvxdbyu .gt_stub_row_group {
+#cwivnrxvof .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -982,15 +985,15 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   vertical-align: top;
 }
 
-#ceqlvxdbyu .gt_row_group_first td {
+#cwivnrxvof .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#ceqlvxdbyu .gt_row_group_first th {
+#cwivnrxvof .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#ceqlvxdbyu .gt_summary_row {
+#cwivnrxvof .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1000,16 +1003,16 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   padding-right: 5px;
 }
 
-#ceqlvxdbyu .gt_first_summary_row {
+#cwivnrxvof .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#ceqlvxdbyu .gt_first_summary_row.thick {
+#cwivnrxvof .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#ceqlvxdbyu .gt_last_summary_row {
+#cwivnrxvof .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1019,7 +1022,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   border-bottom-color: #D3D3D3;
 }
 
-#ceqlvxdbyu .gt_grand_summary_row {
+#cwivnrxvof .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1029,7 +1032,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   padding-right: 5px;
 }
 
-#ceqlvxdbyu .gt_first_grand_summary_row {
+#cwivnrxvof .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1039,7 +1042,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   border-top-color: #D3D3D3;
 }
 
-#ceqlvxdbyu .gt_last_grand_summary_row_top {
+#cwivnrxvof .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1049,11 +1052,11 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   border-bottom-color: #D3D3D3;
 }
 
-#ceqlvxdbyu .gt_striped {
+#cwivnrxvof .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#ceqlvxdbyu .gt_table_body {
+#cwivnrxvof .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1062,7 +1065,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   border-bottom-color: #D3D3D3;
 }
 
-#ceqlvxdbyu .gt_footnotes {
+#cwivnrxvof .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1076,7 +1079,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   border-right-color: #D3D3D3;
 }
 
-#ceqlvxdbyu .gt_footnote {
+#cwivnrxvof .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1085,7 +1088,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   padding-right: 5px;
 }
 
-#ceqlvxdbyu .gt_sourcenotes {
+#cwivnrxvof .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1099,7 +1102,7 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   border-right-color: #D3D3D3;
 }
 
-#ceqlvxdbyu .gt_sourcenote {
+#cwivnrxvof .gt_sourcenote {
   font-size: 90%;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1107,72 +1110,72 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
   padding-right: 5px;
 }
 
-#ceqlvxdbyu .gt_left {
+#cwivnrxvof .gt_left {
   text-align: left;
 }
 
-#ceqlvxdbyu .gt_center {
+#cwivnrxvof .gt_center {
   text-align: center;
 }
 
-#ceqlvxdbyu .gt_right {
+#cwivnrxvof .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ceqlvxdbyu .gt_font_normal {
+#cwivnrxvof .gt_font_normal {
   font-weight: normal;
 }
 
-#ceqlvxdbyu .gt_font_bold {
+#cwivnrxvof .gt_font_bold {
   font-weight: bold;
 }
 
-#ceqlvxdbyu .gt_font_italic {
+#cwivnrxvof .gt_font_italic {
   font-style: italic;
 }
 
-#ceqlvxdbyu .gt_super {
+#cwivnrxvof .gt_super {
   font-size: 65%;
 }
 
-#ceqlvxdbyu .gt_footnote_marks {
+#cwivnrxvof .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#ceqlvxdbyu .gt_asterisk {
+#cwivnrxvof .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#ceqlvxdbyu .gt_indent_1 {
+#cwivnrxvof .gt_indent_1 {
   text-indent: 5px;
 }
 
-#ceqlvxdbyu .gt_indent_2 {
+#cwivnrxvof .gt_indent_2 {
   text-indent: 10px;
 }
 
-#ceqlvxdbyu .gt_indent_3 {
+#cwivnrxvof .gt_indent_3 {
   text-indent: 15px;
 }
 
-#ceqlvxdbyu .gt_indent_4 {
+#cwivnrxvof .gt_indent_4 {
   text-indent: 20px;
 }
 
-#ceqlvxdbyu .gt_indent_5 {
+#cwivnrxvof .gt_indent_5 {
   text-indent: 25px;
 }
 
-#ceqlvxdbyu .katex-display {
+#cwivnrxvof .katex-display {
   display: inline-flex !important;
   margin-bottom: 0.75em !important;
 }
 
-#ceqlvxdbyu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+#cwivnrxvof div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
   height: 0px !important;
 }
 </style>
@@ -1235,26 +1238,102 @@ Table&nbsp;2: this table shows logistic regression of medals against predictors 
 <section id="objective-3" class="level2">
 <h2 class="anchored" data-anchor-id="objective-3">Objective 3</h2>
 <p>Create a figure (1 pt)</p>
+<p>the figure below (<span class="citation" data-cites="fig">@fig</span> ) shows a forest plot based on the logistic regression.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(broom)</span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="fu">tidy</span>(log_model, <span class="at">conf.int =</span> <span class="cn">TRUE</span>, <span class="at">exponentiate =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  tidycat<span class="sc">::</span><span class="fu">tidy_categorical</span>(log_model, <span class="at">exponentiate =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> </span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="sc">-</span><span class="dv">1</span>) <span class="sc">|&gt;</span> <span class="co"># remove intercept</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="sc">-</span><span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a> <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> level, <span class="at">y =</span> estimate, </span>
 <span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>                       <span class="at">ymin =</span> conf.low, <span class="at">ymax =</span> conf.high)) <span class="sc">+</span></span>
 <span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
 <span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>() <span class="sc">+</span></span>
-<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols =</span> <span class="fu">vars</span>(variable), <span class="at">scales =</span> <span class="st">"free"</span>, <span class="at">space =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
-<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Forest Plot"</span>) <span class="sc">+</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols =</span> <span class="fu">vars</span>(variable), <span class="at">scales =</span> <span class="st">"free"</span>, <span class="at">space =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_log10</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div>
+<div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="FInal_doc_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
+<p><img src="FInal_doc_files/figure-html/fig-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption>forest plot of logistic regression</figcaption>
 </figure>
 </div>
 </div>
 </div>
+</section>
+<section id="objective-4" class="level2">
+<h2 class="anchored" data-anchor-id="objective-4">Objective 4</h2>
+<p>Write <em>and</em> use a function that does something with the data (1 pt)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>new_std <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  mean_val <span class="ot">&lt;-</span> <span class="fu">sum</span>(x, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> n</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>  variance <span class="ot">&lt;-</span> <span class="fu">sum</span>((x <span class="sc">-</span> mean_val)<span class="sc">^</span><span class="dv">2</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> (n <span class="sc">-</span> <span class="dv">1</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>  std2 <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(variance)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(std2)  </span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>x<span class="ot">&lt;-</span> olympics<span class="sc">$</span>medal_num</span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="fu">new_std</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 0.8187335</code></pre>
+</div>
+</div>
+</section>
+<section id="objective-5" class="level2">
+<h2 class="anchored" data-anchor-id="objective-5">Objective 5</h2>
+<p>Create and render a quarto document that includes at least:</p>
+<ul>
+<li><p>The table, regression results, and figure, with appropriate captions (1 pt)</p></li>
+<li><p>Inline R code in at least 2 places, 1 pulling a statistic from a table (i.e., using <code>gtsummary::inline_text()</code>) and 1 printing something else (like we did with the mean age in the example) (1 pt)</p></li>
+<li><p>Cross-references to a table and a figure at least once each (1 pt)</p></li>
+<li><p>A brief description of the data, including its source (1 pt)</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>table1<span class="ot">&lt;-</span><span class="fu">tbl_summary</span>(</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    olympics, </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">by =</span> sex, </span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">include =</span> <span class="fu">c</span>(height, weight,  medal, age), </span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">label =</span> <span class="fu">list</span>(</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>            height <span class="sc">~</span> <span class="st">"Height"</span>, </span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>            weight <span class="sc">~</span> <span class="st">"Weight"</span>,</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>            medal <span class="sc">~</span> <span class="st">"Medal"</span></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a><span class="fu">inline_text</span>(table1, <span class="at">variable =</span> <span class="st">"age"</span>, <span class="at">column =</span> <span class="st">"stat_1"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "24 (21, 28)"</code></pre>
+</div>
+</div>
+<p>The median age and IQR of athletes was 24 (21, 28)</p>
+<p>the mean age for just men was 26.4971778</p>
+<p>the mean age for just women was 24.509167</p>
+</section>
+<section id="objective-6" class="level2">
+<h2 class="anchored" data-anchor-id="objective-6">Objective 6</h2>
+<p>Use the <code>{here}</code> package every time you refer to file paths when reading in data and saving any files (1 pt)</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>forest_olympics<span class="ot">&lt;-</span> <span class="fu">tidy</span>(log_model, <span class="at">conf.int =</span> <span class="cn">TRUE</span>, <span class="at">exponentiate =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  tidycat<span class="sc">::</span><span class="fu">tidy_categorical</span>(log_model, <span class="at">exponentiate =</span> <span class="cn">TRUE</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">slice</span>(<span class="sc">-</span><span class="dv">1</span>) <span class="sc">|&gt;</span> </span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a> <span class="fu">ggplot</span>(<span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> level, <span class="at">y =</span> estimate, </span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">ymin =</span> conf.low, <span class="at">ymax =</span> conf.high)) <span class="sc">+</span></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>() <span class="sc">+</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ggtitle</span>(<span class="st">"Forest Plot"</span>) <span class="sc">+</span></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_grid</span>(<span class="at">cols =</span> <span class="fu">vars</span>(variable), <span class="at">scales =</span> <span class="st">"free"</span>, <span class="at">space =</span> <span class="st">"free"</span>) <span class="sc">+</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_log10</span>()</span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="fu">ggsave</span>(<span class="at">plot=</span>forest_olympics , </span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">filename =</span>  <span class="fu">here</span>(<span class="st">"data"</span>, <span class="st">"forest.olympics.pdf"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Saving 7 x 5 in image</code></pre>
+</div>
+</div>
+</section>
+<section id="data-description" class="level2">
+<h2 class="anchored" data-anchor-id="data-description">Data description</h2>
+<p>This data covers 120 years of olympic athlete data and results. It comes from a Kaggle dataset published by RGRIFFIN. It can be found at <a href="https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results/" class="uri">https://www.kaggle.com/datasets/heesoo37/120-years-of-olympic-history-athletes-and-results/</a></p>
 </section>
 
 </main>

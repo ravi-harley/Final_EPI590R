@@ -20,8 +20,8 @@ olympics<- read.csv(here::here("data", "olympics.csv"))
 ## Objective 1
 
 -   Create a `{gtsummary}` table of descriptive statistics about your data (1 pt)
--   the table below shows the descriptive statistics between men `r (nrow(olympics2[olympics2$sex == "M"` and women `r (nrow(olympics2[olympics2$sex == "F" (some athletes are included multiple times)`
--   the number of unique athletes in the data set is `r length(unique(olympics2$id`
+-   the table below shows the descriptive statistics between men `r (nrow(olympics[olympics$sex == "M",]))` and women `r (nrow(olympics[olympics$sex == "F",]))` (some athletes are included multiple times)
+-   the number of unique athletes in the data set is `r length(unique(olympics$id))`
 
 ```{r}
 #| label: tbl-one
@@ -104,7 +104,7 @@ new_std <- function(x) {
   return(std2)  
 }
 
-x<- olympics2$medal_num
+x<- olympics$medal_num
 new_std(x)
 
 
@@ -138,9 +138,9 @@ inline_text(table1, variable = "age", column = "stat_1")
 
 The median age and IQR of athletes was `r inline_text(table1, variable = "age", column = "stat_1")`
 
-the mean age for just men was `r mean(olympics2$age[olympics2$sex == "M"], na.rm = TRUE)`
+the mean age for just men was `r mean(olympics$age[olympics$sex == "M"], na.rm = TRUE)`
 
-the mean age for just women was `r mean(olympics2$age[olympics2$sex == "F"], na.rm = TRUE)`
+the mean age for just women was `r mean(olympics$age[olympics$sex == "F"], na.rm = TRUE)`
 
 ## Objective 6
 
@@ -157,7 +157,6 @@ forest_olympics<- tidy(log_model, conf.int = TRUE, exponentiate = TRUE) |>
 	ggtitle("Forest Plot") +
   facet_grid(cols = vars(variable), scales = "free", space = "free") +
   scale_y_log10()
-print(fore)
 ggsave(plot=forest_olympics , 
        filename =  here("data", "forest.olympics.pdf"))
 ```
